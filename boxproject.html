@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Box project</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family:"candara",sans-serif;
+		}
+		body{
+			background-color: orange;
+		}
+		.navigation{
+			text-align: center;
+		}
+		.navigation ul{
+			list-style-type: none;
+		}
+		.navigation ul li{
+			color: white;
+			display: inline-block;
+			font-size: 1.2rem;
+			padding: 1rem 1.5rem;
+			background-color: transparent;
+			margin: 1rem ;
+			transition: .5s ease;
+		}
+		.navigation ul li:hover{
+			background: white;
+			border-radius: .5rem;
+			color: orange;
+			border: none;
+		}
+		.picture{
+			width: 30%;
+			height: auto;
+			padding: .8rem;
+			border: .3rem double orange;
+			margin: .5rem .8rem;
+			transition: .5s ease;
+			box-sizing: border-box;
+		}
+		.picture:hover{
+			padding:0;
+			border: none;
+		}
+		.flexible{
+			margin-right: auto;
+			margin-left: auto;
+			width: 100%;
+			background: white;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.flexitem{
+			width: 5rem;
+			line-height: 5rem;
+			background: blue;
+			color: white;
+			text-align: center;
+			margin: .5rem;
+			font-size: 1.5rem;
+			transition: .5s ease;
+		}
+		.flexitem:hover{
+			background: orange;
+		}
+		.contain{
+			background: white;
+			width: 100%;
+			height: 20rem;
+			display: flex;
+			flex-direction: row;
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+			align-items: flex-start;
+			justify-content: flex-start;
+			justify-content: space-between;
+			transition: .5s ease;
+		}
+		.contain:hover{
+			background: black;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navigation">
+			<ul>
+				<a href="#"><li class="active">Home</li></a>
+				<a href="#"><li>Gallery</li></a>
+				<a href="#"><li>Contacts</li></a>
+				<a href="#"><li>Services</li></a>
+				<a href="#"><li>About</li></a>
+			</ul>
+		</nav>
+	</header>
+	<div class="flexible">
+		<img src="../doc01.jpg" alt="picture" class="picture" >
+		<img src="../doc02.jpg" alt="picture" class="picture" >
+		<img src="../doc03.jpg" alt="picture" class="picture" >
+		<img src="../doc04.jpg" alt="picture" class="picture" >
+		<img src="../doc05.jpg" alt="picture" class="picture" >
+		<img src="../doc06.jpg" alt="picture" class="picture" >
+		<img src="../doc07.jpg" alt="picture" class="picture" >
+		<img src="../doc08.jpg" alt="picture" class="picture" >
+		<img src="../doc09.jpg" alt="picture" class="picture" >
+		<img src="../doc10.jpg" alt="picture" class="picture" >
+		<img src="../doc11.jpg" alt="picture" class="picture" >
+		<img src="../doc12.jpg" alt="picture" class="picture" >
+		<img src="../doc13.jpg" alt="picture" class="picture" >
+		<img src="../doc14.jpg" alt="picture" class="picture" >
+		<img src="../doc15.jpg" alt="picture" class="picture" >
+		<img src="../doc16.jpg" alt="picture" class="picture" >
+	</div>
+	<div class="contain">
+		<div class="flexitem"
+		style="align-self: flex-start;"
+		>A</div>
+		<div class="flexitem"
+		style="align-self: center;"
+		>B</div>
+		<div class="flexitem"
+		style="align-self: end;"
+		>C</div>
+		<div class="flexitem"
+		style="align-self: end;"
+		>D</div>
+		<div class="flexitem"
+		style="align-self: center;"
+		>E</div>
+		<div class="flexitem"
+		style="align-self: flex-start;"
+		>F</div>
+	</div>
+	<script type="text/javascript">
+		function myFunction(){
+			var a=2;
+			var b=10;
+		}
+		alert(3+9)
+		
+	</script>
+</body>
+</html>
